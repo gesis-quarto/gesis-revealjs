@@ -9,4 +9,4 @@ contributes:
       highlight-style: github
       theme: fakegesis.scss
       footer: "[www.gesis.org](http://www.gesis.org)"
-      logo: gesis.png
+      logo: logo_gesis.svg

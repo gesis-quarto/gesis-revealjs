@@ -75,7 +75,7 @@ fig <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
 ggplotly(fig, height = 600, width = 1000)
 ```
 
-## Katze!
+## Miau!
 
 ![](https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg)
 
@@ -183,4 +183,4 @@ This is a good place to put your references.
 Surprise!
 :::
 
-# Au revoir ! {.center-x background-image="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg" background-size="100%"}
+# Tschüsseldorf! {.center-x}
