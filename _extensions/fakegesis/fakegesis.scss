@@ -8,6 +8,8 @@ $body-bg: #ffffff !default;
 $body-color: #000000 !default;
 $link-color: #003c78 !default;
 
+$sec-color: #a7d6f5;
+
 $code-block-bg: #dee2e6 !default;
 $code-block-border-color: $body-color !default;
 
@@ -77,15 +79,15 @@ $presentation-heading-color: $link-color !default;
 }
 
 .reveal .progress {
-    top: 3px !important;
-    height: 2% !important;
+    top: 0px !important;
+    height: 1% !important;
 }
 
 .slide-logo {
   display: block !important;
   position: fixed !important;
   top: 3% !important;
-  left: 1.5% !important;
+  left: 90% !important;
   max-height: 10% !important;
   height: 3.5% !important;
   width: auto !important;
@@ -112,7 +114,7 @@ $presentation-heading-color: $link-color !default;
 
 .center-x {
     text-align: center;
-    background-color: $code-block-bg;
+    background-color: $sec-color;
 }
 
 .center-xy {
