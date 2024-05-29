@@ -6,7 +6,32 @@ contributes:
   formats:
     revealjs:
       slide-number: c
+      progress: false
       highlight-style: github
       theme: fakegesis.scss
       footer: "[www.gesis.org](http://www.gesis.org)"
       logo: logo_gesis.svg
+      format-resources: ["fancy.png","thanks.png"]
+      title-slide-attributes: 
+        data-background-image: title-background-house.png
+        data-background-size: cover
+      template-partials:
+      - title-slide.html
+      include-after: |
+        <script type="text/javascript">
+          Reveal.on('ready', event => {
+            if (event.indexh === 0) {
+              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 0;
+            }
+          });
+          Reveal.addEventListener('slidechanged', (event) => {
+            if (event.indexh === 0) {
+              Reveal.configure({ slideNumber: null });
+              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 0;
+            }
+            if (event.indexh === 1) { 
+              Reveal.configure({ slideNumber: 'c' });
+              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 1;
+            }
+          });
+        </script>
