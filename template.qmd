@@ -60,7 +60,8 @@ Create an emacs lisp command
 #| fig-height: 6
 #| fig-width: 10
 library(ggplot2)
-ggplot(mtcars, aes(wt, mpg)) + geom_point()
+ggplot(mtcars, aes(wt, mpg)) +
+    geom_point()
 ```
 
 ## The same ggplot figure (ggplotly)
@@ -71,7 +72,8 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point()
 #| fig-width: 5
 library(ggplot2)
 library(plotly)
-fig <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
+fig <- ggplot(mtcars, aes(wt, mpg)) +
+    geom_point()
 ggplotly(fig, height = 600, width = 1000)
 ```
 
@@ -80,6 +82,12 @@ ggplotly(fig, height = 600, width = 1000)
 ![](https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg)
 
 ## Bullet points
+
+* My point1
+* My point2
+* My point3
+
+## Bullet points with fancy background {background-image="fancy.png"}
 
 * My point1
 * My point2
@@ -184,3 +192,5 @@ Surprise!
 :::
 
 # Tschüsseldorf! {.center-x}
+
+# Tschüsseldorf! {.thanks background-image="thanks.png"}

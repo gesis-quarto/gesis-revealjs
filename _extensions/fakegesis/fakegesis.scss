@@ -22,60 +22,59 @@ $presentation-heading-color: $link-color !default;
 /*-- scss:rules --*/
 
 .picture {
-  border-style: solid;
-  border-width: 3pt;
-  border-color: $body-color;
-  border-radius: 50%;
-  padding: 5pt;
-  height: 50%;
-  width: auto;
+    border-style: solid;
+    border-width: 3pt;
+    border-color: $body-color;
+    border-radius: 50%;
+    padding: 5pt;
+    height: 50%;
+    width: auto;
 }
 
 #title-slide {
-  
-  text-align: left;
 
-  .institute,
-  .quarto-title-affiliation {
-    // font-style: italic;
-    font-size: 60%;
-  }
+    text-align: left;
 
-  .author,
-  .quarto-title-author-name {
-    color: $body-color;
-  }
-
-  .quarto-title-authors {
-    display: flex;
-    justify-content: left;
-  
-    .quarto-title-author {
-      padding-left: 0em;
-      padding-right: 0em;
-      width: 100%;
+    .title {
+        padding-top: 5rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
     }
-  }
 
-  p.author::before,
-  div.quarto-title-author::before {
-    content: "";
-    display: block;
-    border: none;
-    background-color: $body-color;
-    color: $body-color;
-    height: 3px;
-    margin-bottom: 1em;
-  }
+    .subtitle {
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 10rem;
+    }
 
-  p, a {
-    color: $link-color;
-  }
+    .author {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .institute {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .date {
+        color: white;
+        font-size: 2rem;
+    }
+
+
+    p,
+    a {
+        color: $link-color;
+    }
+
 }
 
 .footer {
-  bottom: 10px !important;
-  // color: #58748f !important;
+    bottom: 10px !important;
+    // color: #58748f !important;
 }
 
 .reveal .progress {
@@ -84,32 +83,32 @@ $presentation-heading-color: $link-color !default;
 }
 
 .slide-logo {
-  display: block !important;
-  position: fixed !important;
-  top: 3% !important;
-  left: 90% !important;
-  max-height: 10% !important;
-  height: 3.5% !important;
-  width: auto !important;
-  color: $body-color !important;
+    display: block !important;
+    position: fixed !important;
+    top: 3% !important;
+    left: 90% !important;
+    max-height: 10% !important;
+    height: 3.5% !important;
+    width: auto !important;
+    color: $body-color !important;
 }
 
 .slide-menu-button {
-  left: 10px !important;
-  bottom: 10px !important;
+    left: 10px !important;
+    bottom: 10px !important;
 }
 
 .slide-number,
 .reveal.has-logo .slide-number {
-  bottom: 10px !important;
-  right: 10px !important;
-  top: unset !important;
-  color: $body-color !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    top: unset !important;
+    color: $body-color !important;
 }
 
 .cell-output {
-  border: 1px solid $body-color;
-  border-radius: 4px;
+    border: 1px solid $body-color;
+    border-radius: 4px;
 }
 
 .center-x {
@@ -117,11 +116,19 @@ $presentation-heading-color: $link-color !default;
     background-color: $sec-color;
 }
 
+.thanks {
+    text-align: center;
+}
+
+.thanks>h1 {
+    color: white !important;
+}
+
 .center-xy {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translateY(-50%), translateX(-50%);
-  transform: translateY(-50%), translateX(-50%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%), translateX(-50%);
+    transform: translateY(-50%), translateX(-50%);
 }
