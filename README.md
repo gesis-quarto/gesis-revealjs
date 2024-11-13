@@ -1,4 +1,4 @@
-# Quarto reveal.js template - fakegesis
+# GESIS revealjs Format
 
 This is a repository for `Quarto` `reveal.js` template. And this is not an official product. Please use the official Powerpoint template.
 
