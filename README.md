@@ -9,7 +9,7 @@ But this is a demo: [https://chainsawriot.github.io/fakegesis/](https://chainsaw
 This [Quarto](quarto.org) template can be installed/used using the following command:
 
 ```bash
-quarto use template gesiscss/quarto-revealjs-fakegesis
+quarto use template gesis-quarto/gesis-revealjs
 ```
 
 ## Speedrun
@@ -21,7 +21,7 @@ For this particular example, you'll need R, `ggplot2` and `plotly`.
 mkdir slides
 cd slides
 ## Step 2: use the template
-quarto use template gesiscss/quarto-revealjs-fakegesis --no-prompt
+quarto use template gesis-quarto/gesis-revealjs --no-prompt
 ## Step 3: render
 quarto render slides.qmd
 ## Step 4: there is no step 4
