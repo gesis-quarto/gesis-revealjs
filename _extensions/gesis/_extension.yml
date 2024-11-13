@@ -8,7 +8,7 @@ contributes:
       slide-number: c
       progress: false
       highlight-style: github
-      theme: gesis.scss
+      theme: gesis-revealjs.scss
       footer: "[www.gesis.org](http://www.gesis.org)"
       logo: logo_gesis.svg
       format-resources: ["fancy.png","thanks.png"]
