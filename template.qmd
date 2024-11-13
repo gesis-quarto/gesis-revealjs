@@ -7,7 +7,7 @@ date: today
 date-format: "YYYY-MM-DD"
 footer: "@gesis_org"
 embed-resources: true
-format: fakegesis-revealjs
+format: gesis-revealjs
 ---
 
 ## Introduction

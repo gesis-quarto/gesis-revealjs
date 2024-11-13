@@ -1,6 +1,6 @@
-title: Fake GESIS Presentation Template
-author: Chung-hong Chan
-version: 0.0.1
+title: GESIS Presentation Template
+author: Chung-hong Chan and David Schoch
+version: 1.0.0
 quarto-required: ">=1.2.231"
 contributes:
   formats:
@@ -8,7 +8,7 @@ contributes:
       slide-number: c
       progress: false
       highlight-style: github
-      theme: fakegesis.scss
+      theme: gesis.scss
       footer: "[www.gesis.org](http://www.gesis.org)"
       logo: logo_gesis.svg
       format-resources: ["fancy.png","thanks.png"]
