@@ -160,6 +160,17 @@ $presentation-heading-color: $link-color !default;
     color: $body-color !important;
 }
 
+.logo-title {
+    top: 1% !important;
+    left: 10% !important;
+    height: 15vh !important;
+}
+
+.slide-logo-print {
+    left: 75% !important;
+    height: 7% !important;
+}
+
 .slide-menu-button {
     left: 10px !important;
     bottom: 10px !important;

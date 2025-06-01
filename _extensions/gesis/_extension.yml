@@ -13,25 +13,31 @@ contributes:
       logo: logo_gesis.svg
       format-resources: ["fancy.png","thanks.png"]
       title-slide-attributes: 
-        data-background-image: title-background-house.png
-        data-background-size: 100% 100%
+        data-background-gradient: linear-gradient(white 15%, rgba(255, 255, 255, 0 ) 15%), linear-gradient(50deg, \#582878, 30%, \#003C78)
       template-partials:
       - title-slide.html
       include-after: |
         <script type="text/javascript">
+          const logo = document.querySelector("img.slide-logo")
           Reveal.on('ready', event => {
-            if (event.indexh === 0) {
-              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 0;
+            if (event.indexh === 0 && !document.querySelector("html").classList.contains("print-pdf")) {
+              logo.classList.add("logo-title")
+            }
+            if (document.querySelector("html").classList.contains("print-pdf")) {
+              logo.classList.add("slide-logo-print")
             }
           });
           Reveal.addEventListener('slidechanged', (event) => {
             if (event.indexh === 0) {
               Reveal.configure({ slideNumber: null });
-              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 0;
+              logo.classList.add("logo-title")
             }
             if (event.indexh === 1) { 
               Reveal.configure({ slideNumber: 'c' });
-              document.querySelector("div.has-logo > svg.slide-logo").style.opacity = 1;
+              logo.classList.remove("logo-title")
+            }
+            if (document.querySelector("html").classList.contains("print-pdf")) {
+              logo.classList.remove("logo-title")
             }
           });
         </script>
