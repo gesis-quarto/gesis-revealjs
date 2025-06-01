@@ -1,3 +1,5 @@
 /.DS_Store
 template_files/
 template.html
+*.svg
+*.png
