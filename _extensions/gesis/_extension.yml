@@ -11,7 +11,8 @@ contributes:
       theme: gesis-revealjs.scss
       footer: "[www.gesis.org](http://www.gesis.org)"
       logo: logo_gesis.svg
-      format-resources: ["fancy.png","thanks.png"]
+      title-decoration: &decoration "decoration/house.svg"
+      format-resources: ["fancy.png","thanks.png", *decoration]
       title-slide-attributes: 
         data-background-gradient: linear-gradient(white 15%, rgba(255, 255, 255, 0 ) 15%), linear-gradient(50deg, \#582878, 30%, \#003C78)
       template-partials:

@@ -98,36 +98,51 @@ $presentation-heading-color: $link-color !default;
     font-family: $font-family-headings;
 }
 
+#title-decoration {
+    position: absolute;
+    bottom: -22%;
+    right: -33%;
+}
+
+#title-decoration img {
+    width: 33vw;
+}
+
 #title-slide {
 
     text-align: left;
 
     .title {
-        padding-top: 5rem;
+        padding-top: 6rem;
         color: white;
+        font-family: $font-family-headings;
         font-size: 3rem;
         font-weight: 700;
     }
 
     .subtitle {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
         padding-bottom: 10rem;
     }
 
     .author {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
         font-weight: 700;
     }
 
     .institute {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
     }
 
     .date {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
     }
 
