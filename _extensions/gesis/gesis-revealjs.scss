@@ -1,7 +1,70 @@
-/*-- scss:defaults --*/
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonts/Cabin-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonts/Cabin-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonts/Cabin-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-It.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-LightIt.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url('fonts/SourceSans3-SemiboldIt.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
 
 // fonts
-$font-family-sans-serif: 'Helvetica' !default;
+$font-family-sans-serif: 'Source Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-headings: 'Cabin' !default;
 
 // colors
 $body-bg: #ffffff !default;
@@ -31,36 +94,55 @@ $presentation-heading-color: $link-color !default;
     width: auto;
 }
 
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: $font-family-headings;
+}
+
+#title-decoration {
+    position: absolute;
+    bottom: -22%;
+    right: -33%;
+}
+
+#title-decoration img {
+    width: 33vw;
+}
+
 #title-slide {
 
     text-align: left;
 
     .title {
-        padding-top: 5rem;
+        padding-top: 6rem;
         color: white;
+        font-family: $font-family-headings;
         font-size: 3rem;
         font-weight: 700;
     }
 
     .subtitle {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
         padding-bottom: 10rem;
     }
 
     .author {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
         font-weight: 700;
     }
 
     .institute {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
     }
 
     .date {
         color: white;
+        font-family: $font-family-headings;
         font-size: 2rem;
     }
 
@@ -91,6 +173,17 @@ $presentation-heading-color: $link-color !default;
     height: 3.5% !important;
     width: auto !important;
     color: $body-color !important;
+}
+
+.logo-title {
+    top: 1% !important;
+    left: 10% !important;
+    height: 15vh !important;
+}
+
+.slide-logo-print {
+    left: 75% !important;
+    height: 7% !important;
 }
 
 .slide-menu-button {
